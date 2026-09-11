@@ -109,6 +109,9 @@
   }
   .option[data-agent="agenzia"] { --accent: #2f5fd6; --tint: #ebf0fc; }
   .option[data-agent="dentista"] { --accent: #0f8f74; --tint: #e8f6f2; }
+  .option[data-agent="hotel"] { --accent: #7c4fd6; --tint: #f1ecfb; }
+  .option[data-agent="pizzeria"] { --accent: #e2622a; --tint: #fdece3; }
+  .option[data-agent="ristorante"] { --accent: #c23b3b; --tint: #fbeaea; }
 
   .icon-badge {
     width: 48px;
@@ -226,6 +229,75 @@
             <p class="desc">Prenotazioni, orari e domande frequenti dello studio.</p>
           </label>
         </div>
+
+        <div class="option" data-agent="hotel">
+          <input type="radio" name="agent" id="agent-hotel" value="hotel" />
+          <label for="agent-hotel">
+            <div class="top-row">
+              <span class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="1.5" />
+                  <path d="M4 12h16" />
+                  <path d="M8 4v8M16 4v8" />
+                  <path d="M9 20v-2a3 3 0 0 1 6 0v2" />
+                </svg>
+              </span>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12l6 6L20 6" />
+                </svg>
+              </span>
+            </div>
+            <span class="name">Hotel</span>
+            <p class="desc">Disponibilità camere, prenotazioni e informazioni.</p>
+          </label>
+        </div>
+
+        <div class="option" data-agent="pizzeria">
+          <input type="radio" name="agent" id="agent-pizzeria" value="pizzeria" />
+          <label for="agent-pizzeria">
+            <div class="top-row">
+              <span class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m2 16 20 6-6-20A20 20 0 0 0 2 16" />
+                  <path d="M5.71 17.11a17.04 17.04 0 0 1 11.4-11.4" />
+                  <path d="M15 11h.01" />
+                  <path d="M11 15h.01" />
+                  <path d="M16 16h.01" />
+                </svg>
+              </span>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12l6 6L20 6" />
+                </svg>
+              </span>
+            </div>
+            <span class="name">Pizzeria</span>
+            <p class="desc">Ordini, menu e prenotazioni del tavolo.</p>
+          </label>
+        </div>
+
+        <div class="option" data-agent="ristorante">
+          <input type="radio" name="agent" id="agent-ristorante" value="ristorante" />
+          <label for="agent-ristorante">
+            <div class="top-row">
+              <span class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+                  <path d="M7 2v20" />
+                  <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                </svg>
+              </span>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12l6 6L20 6" />
+                </svg>
+              </span>
+            </div>
+            <span class="name">Ristorante</span>
+            <p class="desc">Prenotazioni, menu e informazioni sul locale.</p>
+          </label>
+        </div>
       </fieldset>
     </form>
 
@@ -247,6 +319,21 @@
       name: "Studio Dentistico",
       agentId: "agent_cc49c5b933b11c01854eab083a",
       color: "#0f8f74"
+    },
+    hotel: {
+      name: "Hotel",
+      agentId: "agent_141e00cbc15b6885f713ed1ed2",
+      color: "#7c4fd6"
+    },
+    pizzeria: {
+      name: "Pizzeria",
+      agentId: "agent_1017a45b7067857597ef47a1b5",
+      color: "#e2622a"
+    },
+    ristorante: {
+      name: "Ristorante",
+      agentId: "agent_2e78ee9b138c6f23d05d61bc70",
+      color: "#c23b3b"
     }
   };
 
